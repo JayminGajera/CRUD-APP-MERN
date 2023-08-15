@@ -1,0 +1,25 @@
+import React from 'react'
+import '../App.css'
+import {Link} from 'react-router-dom'
+
+const Navbar = () => {
+  return (
+    <div className='nav'>
+        <Link to={'/'}>
+          <img src='data:image/png;base64,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'></img>
+        </Link>
+      
+      <div className='link-upper'>
+      <Link to={'/'} className='link'>
+            Home
+        </Link>
+        <Link to={'/add-record'} className='link'>
+            Add
+        </Link>
+      </div>
+        
+    </div>
+  )
+}
+
+export default Navbar
